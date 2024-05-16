@@ -11,6 +11,7 @@ body {
     background-color: #7600bc;
     padding: 10px 20px; /* Adjust padding for smaller screens */
     margin-bottom: 10px; /* Adjust margin for smaller screens */
+    width: 100%;
 }
 
 
