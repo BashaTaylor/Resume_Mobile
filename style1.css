@@ -9,25 +9,63 @@ body {
 /* Navigation Bar */
 #home {
     background-color: #7600bc;
-    padding: 20px 10px; /* Adjust padding for smaller screens */
-    margin-bottom: 20px; /* Adjust margin for smaller screens */
+    padding: 10px 5px; /* Adjust padding for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
 }
 
 .topdiv {
     padding-right: 10px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: flex-end;
 }
 
 .profile_name {
-    color: white;
-    font-size: 25px;
+    color: lightgray;
+    font-size: 20px;
     font-style: normal;
     padding: 10px 0; /* Adjust padding for smaller screens */
+}
+.profile_name img {
+    max-width: 25px;
+    height:100%
+}
+
+
+
+#linkedin {
+    color: lightgray;
+    text-decoration: none;
+}
+
+#linkedin:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.topmenu {
+    color: lightgray;
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    float: bottom;
+}
+
+.topmenu:hover {
+    color: white;
+    /* Add the styles here */
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 /* Titles */
 h2 {
     font-size: 35px; /* Adjust font size for smaller screens */
-    margin: 20px auto; /* Center align and adjust margin */
+    margin: 20px ; /* Center align and adjust margin */
+}
+
+#main-content {
+    margin-left: 0 10px 0 10px;
 }
 
 /* Objective Section */
@@ -86,8 +124,19 @@ h2 {
 
 /* Education */
 .bg {
+    background-image: url("./html_finalprojimages/campus-spring.jpg");
     width: 90%; /* Adjust width for smaller screens */
     margin: 20px auto; /* Center education section */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: rgb(9, 9, 9);
+    height: 380px;
+    padding-bottom: 5px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    margin-top: 40px;
+    margin-left: 180px;
 }
 
 .education-container {
@@ -101,6 +150,7 @@ h2 {
 
 .education-card h3 {
     margin-left: 0; /* Reset margin for smaller screens */
+    margin-top: 10px ;
 }
 
 .education-card li {
@@ -114,13 +164,38 @@ h2 {
 }
 
 /* Scroll to Top Button */
+/* .iconbutton { */
+    /* Fixed position */
+    /* position: fixed; */
+    /* Adjust position from bottom */ 
+    /* bottom: 20px;  */
+    /* Adjust position from right */
+    /* right: 20px;  */
+/* } */
+
+/* Increase size on hover */
+/* .iconbutton:hover {
+    transform: scale(1.1); 
+} */
+
 .iconbutton {
-    position: fixed; /* Fixed position */
-    bottom: 20px; /* Adjust position from bottom */
-    right: 20px; /* Adjust position from right */
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+    transition: width 1.2s, height 1.2s, transform 1.2s;
 }
 
 .iconbutton:hover {
-    transform: scale(1.1); /* Increase size on hover */
+    width: 50px;
+    height: 50px;
+    transform: rotate(360deg);
+    background: rgb(32, 32, 130);
 }
-
