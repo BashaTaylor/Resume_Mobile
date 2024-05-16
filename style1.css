@@ -9,27 +9,28 @@ body {
 /* Navigation Bar */
 #home {
     background-color: #7600bc;
-    padding: 10px 5px; /* Adjust padding for smaller screens */
+    padding: 10px 20px; /* Adjust padding for smaller screens */
     margin-bottom: 10px; /* Adjust margin for smaller screens */
 }
 
-.topdiv {
-    padding-right: 10px; /* Adjust padding for smaller screens */
-    display: flex;
-    justify-content: flex-end;
-}
+
+
 
 .profile_name {
     color: lightgray;
     font-size: 20px;
     font-style: normal;
-    padding: 10px 0; /* Adjust padding for smaller screens */
+    /* Adjust padding for smaller screens */
+    padding: 0 7px 7px 7px; 
 }
 .profile_name img {
     max-width: 25px;
     height:100%
 }
 
+.contact_info {
+    font-size: 13px;
+}
 
 
 #linkedin {
@@ -42,17 +43,21 @@ body {
     text-decoration: underline;
 }
 
+.topdiv {
+    display: flex;
+    justify-content: start;
+}
 .topmenu {
     color: lightgray;
-    margin: 5px;
-    padding: 10px;
+    margin: 5px 5px 5px 7px;
+    padding: 10px 10px 10px 0;
     font-size: 20px;
     text-decoration: none;
     float: bottom;
 }
 
 .topmenu:hover {
-    color: white;
+    color: blue;
     /* Add the styles here */
     font-weight: bolder;
     text-decoration: underline;
@@ -71,18 +76,23 @@ h2 {
 /* Objective Section */
 #objective h1 {
     font-size: 45px; /* Adjust font size for smaller screens */
-    margin-left: 0; /* Reset margin for smaller screens */
+     /* Reset margin for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Center qualifications */
 }
 
 #objective p {
     font-size: 16px; /* Adjust font size for smaller screens */
-    margin: 0 10px; /* Adjust margin for smaller screens */
+     /* Adjust margin for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Center qualifications */
 }
 
 .img_container {
     width: 100%; /* Ensure image container covers full width */
     max-width: 400px; /* Limit max-width for larger screens */
     margin: auto; /* Center align image container */
+    position: relative;
 }
 
 #profile_image {
@@ -96,13 +106,23 @@ h2 {
 .overlay {
     margin-left: 0; /* Reset margin for smaller screens */
     text-align: center; /* Center align text */
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 90%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    position: absolute;
+}
+.img_container:hover .overlay {
+    opacity: 1;
 }
 
-#image_choice {
-    padding: 10px; /* Adjust padding for smaller screens */
-    margin-left: auto; /* Align to right for smaller screens */
-    margin-right: auto; /* Align to right for smaller screens */
-}
 
 /* Qualifications */
 .all_qualifications {
@@ -116,41 +136,68 @@ h2 {
     margin: 20px auto; /* Center qualifications */
 }
 
+/* Skills */
+.skills_section {
+    margin: 30px 30px 30px 160px;
+    
+}
+
+#skillsList {
+    color: blue;
+}
+
+li::first-letter {
+    text-transform: uppercase;
+}
 /* Professional Experience */
 .professional_experience {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
     margin: 20px auto; /* Center professional experience */
 }
 
 /* Education */
 .bg {
     background-image: url("./html_finalprojimages/campus-spring.jpg");
-    width: 90%; /* Adjust width for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
     margin: 20px auto; /* Center education section */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 380px;
+    height: 380px auto;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     margin-top: 40px;
-    margin-left: 180px;
+    margin-left: 90px;
 }
 
 .education-container {
     margin: 20px auto; /* Center education section */
+    width: 70%;
 }
 
 .education-card {
-    width: 100%; /* Ensure education cards cover full width */
-    margin: 10px 0; /* Adjust margin for smaller screens */
+    width: 85%; /* Ensure education cards cover full width */
+    height: auto;
+    background-color: rgba(32, 32, 130, 0.326);
+    padding: 30px;
+    
+    border-radius: 15px;
+    color: rgb(247, 249, 248);
+    transition: all 1.5s;
+}
+.education-card:hover {
+    transform: translateY(5%);
+    font-size: 17.5px;
+    width: 80%;
+    margin-top: 15px;
 }
 
 .education-card h3 {
     margin-left: 0; /* Reset margin for smaller screens */
-    margin-top: 10px ;
+    /* margin-top: 10px ; */
+    
 }
 
 .education-card li {
