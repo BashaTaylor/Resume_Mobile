@@ -1,0 +1,126 @@
+/* Body */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    min-height: 100vh; /* Ensure body covers the full viewport height */
+}
+
+/* Navigation Bar */
+#home {
+    background-color: #7600bc;
+    padding: 20px 10px; /* Adjust padding for smaller screens */
+    margin-bottom: 20px; /* Adjust margin for smaller screens */
+}
+
+.topdiv {
+    padding-right: 10px; /* Adjust padding for smaller screens */
+}
+
+.profile_name {
+    color: white;
+    font-size: 25px;
+    font-style: normal;
+    padding: 10px 0; /* Adjust padding for smaller screens */
+}
+
+/* Titles */
+h2 {
+    font-size: 35px; /* Adjust font size for smaller screens */
+    margin: 20px auto; /* Center align and adjust margin */
+}
+
+/* Objective Section */
+#objective h1 {
+    font-size: 45px; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Reset margin for smaller screens */
+}
+
+#objective p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    margin: 0 10px; /* Adjust margin for smaller screens */
+}
+
+.img_container {
+    width: 100%; /* Ensure image container covers full width */
+    max-width: 400px; /* Limit max-width for larger screens */
+    margin: auto; /* Center align image container */
+}
+
+#profile_image {
+    width: 100%; /* Ensure image covers full width of container */
+    max-width: 100%; /* Ensure image scales properly */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 0; /* Reset margin for smaller screens */
+    margin-right: 0; /* Reset margin for smaller screens */
+}
+
+.overlay {
+    margin-left: 0; /* Reset margin for smaller screens */
+    text-align: center; /* Center align text */
+}
+
+#image_choice {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-left: auto; /* Align to right for smaller screens */
+    margin-right: auto; /* Align to right for smaller screens */
+}
+
+/* Qualifications */
+.all_qualifications {
+    flex-direction: column; /* Display qualifications in a column */
+    align-items: center; /* Center align qualifications */
+    margin: 0 auto; /* Center qualifications */
+}
+
+.qualifications {
+    width: 80%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Center qualifications */
+}
+
+/* Professional Experience */
+.professional_experience {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Center professional experience */
+}
+
+/* Education */
+.bg {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Center education section */
+}
+
+.education-container {
+    margin: 20px auto; /* Center education section */
+}
+
+.education-card {
+    width: 100%; /* Ensure education cards cover full width */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+}
+
+.education-card h3 {
+    margin-left: 0; /* Reset margin for smaller screens */
+}
+
+.education-card li {
+    margin-left: 0; /* Reset margin for smaller screens */
+}
+
+/* Copy right */
+#copy_right {
+    font-size: 11px;
+    text-align: center; /* Center align copy right text */
+}
+
+/* Scroll to Top Button */
+.iconbutton {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Adjust position from bottom */
+    right: 20px; /* Adjust position from right */
+}
+
+.iconbutton:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
