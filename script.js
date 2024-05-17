@@ -32,6 +32,8 @@ function listSkills() {
     skillsListDiv.appendChild(ul);
 } 
 
+
+
 function sortSkills() {
     // Get the skills list element
     var skillsList = document.getElementById('skillsList');
@@ -57,10 +59,15 @@ function sortSkills() {
 }
 
 
+function showAndSortSkills() {
+    listSkills(); // Call the function to list skills
+    sortSkills(); // Call the function to sort skills
+}
+
 function clearSkillsList() {
     // Get the skillsList div
     const skillsListDiv = document.getElementById('skillsList');
-        
+
     // Remove all children of the skillsList div
     while (skillsListDiv.firstChild) {
         skillsListDiv.removeChild(skillsListDiv.firstChild);
