@@ -275,7 +275,7 @@ li::first-letter {
 .education-card:hover {
     transform: translateY(40%);
     font-size: 19px;
-    width: 90%;
+    width: 88%;
     height: auto;
     margin-top: 30px;
     color: rgb(237, 174, 49);
