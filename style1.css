@@ -112,6 +112,7 @@ div {
     height: auto; /* Maintain aspect ratio */
     margin-left: 0; /* Reset margin for smaller screens */
     margin-right: 0; /* Reset margin for smaller screens */
+    margin-top: 20px;
 }
 
 .overlay {
@@ -153,7 +154,7 @@ div {
     width: 3.2in;
     font-size: 18px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
-    background-color: rgb(32, 32, 130);
+    background-image: linear-gradient(rgb(8, 3, 115), rgb(89, 200, 237));
     font-weight: normal;
     transition: 2s;
 }
@@ -168,8 +169,15 @@ div {
     margin: 30px 30px 50px 160px;
 }
 
+.skills_section button {
+    background-image: linear-gradient(rgb(60, 51, 228), rgb(89, 200, 237));
+    color: white;
+    padding: 7px;
+}
+
 #skillsList {
     color: blue;
+    padding-top: 10px;
 }
 
 li::first-letter {
