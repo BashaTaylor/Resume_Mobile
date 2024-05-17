@@ -173,6 +173,7 @@ div {
     background-image: linear-gradient(rgb(60, 51, 228), rgb(89, 200, 237));
     color: white;
     padding: 7px;
+    border-radius: 15px;
 }
 
 #skillsList {
