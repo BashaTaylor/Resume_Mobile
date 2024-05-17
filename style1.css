@@ -250,32 +250,32 @@ li::first-letter {
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 650px auto;
+    height: 550px ;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
     margin-left: 90px;
 }
 
-.education-container {
-    margin: 20px auto; /* Center education section */
+/* .education-container {
+    margin: 20px auto;
     width: 80% auto;
-}
+} */
 
 .education-card {
-    width: 90%; /* Ensure education cards cover full width */
-    height: auto;
+    width: 89%;
+    height: 250px;
     background-color: rgba(32, 32, 130, 0.326);
-    padding: 30px;
+    padding: 20px;
     font-size: 18px;
     border-radius: 15px;
     color: rgb(247, 249, 248);
     transition: all 1.5s;
 }
 .education-card:hover {
-    transform: translateY(5%);
+    transform: translateY(40%);
     font-size: 19px;
-    width: 93%;
+    width: 90%;
     margin-top: 20px;
     color: rgb(237, 174, 49);
     font-weight: bolder;
