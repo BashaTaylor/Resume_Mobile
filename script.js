@@ -32,6 +32,31 @@ function listSkills() {
     skillsListDiv.appendChild(ul);
 } 
 
+function sortSkills() {
+    // Get the skills list element
+    var skillsList = document.getElementById('skillsList');
+
+    // Get all the list items inside the skills list
+    var skills = skillsList.getElementsByTagName('li');
+
+    // Convert the HTMLCollection to an array for easier sorting
+    skills = Array.from(skills);
+
+    // Sort the skills alphabetically
+    skills.sort(function(a, b) {
+        return a.textContent.localeCompare(b.textContent);
+    });
+
+    // Clear the skills list
+    skillsList.innerHTML = '';
+
+    // Append the sorted skills back to the skills list
+    skills.forEach(function(skill) {
+        skillsList.appendChild(skill);
+    });
+}
+
+
 function clearSkillsList() {
     // Get the skillsList div
     const skillsListDiv = document.getElementById('skillsList');
