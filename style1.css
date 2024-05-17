@@ -277,6 +277,8 @@ li::first-letter {
     font-size: 19px;
     width: 93%;
     margin-top: 20px;
+    color: rgb(237, 174, 49);
+    font-weight: bolder;
 }
 
 .education-card h3 {
