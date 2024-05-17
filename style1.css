@@ -259,11 +259,11 @@ li::first-letter {
 
 .education-container {
     margin: 20px auto; /* Center education section */
-    width: 70%;
+    width: 80% auto;
 }
 
 .education-card {
-    width: 100%; /* Ensure education cards cover full width */
+    width: 90%; /* Ensure education cards cover full width */
     height: auto;
     background-color: rgba(32, 32, 130, 0.326);
     padding: 30px;
@@ -275,7 +275,7 @@ li::first-letter {
 .education-card:hover {
     transform: translateY(5%);
     font-size: 19px;
-    width: 100%;
+    width: 93%;
     margin-top: 20px;
 }
 
