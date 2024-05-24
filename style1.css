@@ -1,17 +1,22 @@
 /* Body */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    min-height: 100vh; /* Ensure body covers the full viewport height */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    min-height: 100vh;
+    /* Ensure body covers the full viewport height */
     width: auto;
 }
 
 /* Navigation Bar */
 nav {
     background-color: #7600bc;
-    padding: 10px 20px; /* Adjust padding for smaller screens */
-    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    padding: 10px 20px;
+    /* Adjust padding for smaller screens */
+    margin-bottom: 10px;
+    /* Adjust margin for smaller screens */
     width: auto;
     height: auto;
     margin-left: -1cm;
@@ -23,7 +28,11 @@ nav {
     font-size: 20px;
     font-style: normal;
     /* Adjust padding for smaller screens */
-    padding: 0 7px 7px 7px; 
+    padding: 0 7px 7px 0;
+}
+
+.profile_name hr {
+    margin-right: 20px;
 }
 
 .profile_name img {
@@ -42,48 +51,67 @@ nav {
 }
 
 #linkedin:hover {
-    color: blue;
+    color: rgb(4, 4, 111);
     text-decoration: underline;
 }
 
-.topdiv {
-    display: flex;
-    justify-content: start;
-    flex-flow: wrap;
-}
-.topmenu {
-    color: lightgray;
-    margin: 5px 5px 5px 7px;
-    padding: 10px 10px 10px 0;
-    font-size: 20px;
-    text-decoration: none;
-    float: bottom;
+/* Ham div */
+.hamnav {
+    background-color: #a5a4a4;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 27px;
 }
 
-.topmenu:hover {
-    color: blue;
-    /* Add the styles here */
+#hamburger {
+    display: none;
+    /* Hide the checkbox */
+}
+
+#hamitems {
+    display: none;
+    /* Hide the menu items initially */
+}
+
+.hamnav label {
+    cursor: pointer;
+}
+
+.hamnav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.hamnav a:hover {
     font-weight: bolder;
     text-decoration: underline;
+}
+
+/* Show menu items when checkbox is checked */
+#hamburger:checked~#hamitems {
+    display: block;
 }
 
 /* Titles */
 h2 {
     font-size: 35px;
-    margin: 50px 50px 20px 50px; 
+    margin: 50px 50px 20px 50px;
 }
 
 /* Objective Section */
 #objective h1 {
     font-size: 45px;
     width: 80%;
-    margin: 40px 0 20px 0 ;
+    margin: 40px 0 20px 0;
 }
 
 #objective p {
     font-size: 18px;
-    width: auto; 
-    margin-left: 30px; 
+    width: auto;
+    margin-left: 30px;
 }
 
 .objective_duo {
@@ -92,7 +120,7 @@ h2 {
 
 div {
     width: auto;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 * {
@@ -100,24 +128,34 @@ div {
 }
 
 .img_container {
-    width: 100%; /* Ensure image container covers full width */
-    max-width: 400px; /* Limit max-width for larger screens */
-    margin: auto; /* Center align image container */
+    width: 100%;
+    /* Ensure image container covers full width */
+    max-width: 400px;
+    /* Limit max-width for larger screens */
+    margin: auto;
+    /* Center align image container */
     position: relative;
 }
 
 #profile_image {
-    width: 100%; /* Ensure image covers full width of container */
-    max-width: 100%; /* Ensure image scales properly */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 0; /* Reset margin for smaller screens */
-    margin-right: 0; /* Reset margin for smaller screens */
+    width: 100%;
+    /* Ensure image covers full width of container */
+    max-width: 100%;
+    /* Ensure image scales properly */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: 0;
+    /* Reset margin for smaller screens */
+    margin-right: 0;
+    /* Reset margin for smaller screens */
     margin-top: 20px;
 }
 
 .overlay {
-    margin-left: 0; /* Reset margin for smaller screens */
-    text-align: center; /* Center align text */
+    margin-left: 0;
+    /* Reset margin for smaller screens */
+    text-align: center;
+    /* Center align text */
     bottom: 0;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5);
@@ -131,6 +169,7 @@ div {
     padding: 20px;
     position: absolute;
 }
+
 .img_container:hover .overlay {
     opacity: 1;
 }
@@ -140,7 +179,7 @@ div {
 .all_qualifications {
     display: flex;
     flex-direction: row;
-    flex-flow: wrap; 
+    flex-flow: wrap;
 }
 
 .qualifications {
@@ -154,14 +193,13 @@ div {
     width: 3.2in;
     font-size: 18px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
-    background-image: linear-gradient(rgb(8, 3, 115), rgb(89, 200, 237));
+    background-image: linear-gradient(rgba(24, 16, 181, 0.94), rgb(89, 200, 237));
     font-weight: normal;
-    transition: 2s;
+    transition: 2.5s;
 }
 
 .qualifications:hover {
-    width: 3.6in;
-    background-image: linear-gradient(rgb(60, 51, 228), rgb(89, 200, 237));
+    transform: translateY(10px);
 }
 
 /* Skills */
@@ -170,7 +208,7 @@ div {
 }
 
 .skills_section button {
-    background-image: linear-gradient(rgb(60, 51, 228), rgb(89, 200, 237));
+    background-image: linear-gradient(rgba(24, 16, 181, 0.94), rgb(89, 200, 237));
     color: white;
     padding: 7px;
     border-radius: 15px;
@@ -186,6 +224,7 @@ div {
 li::first-letter {
     text-transform: uppercase;
 }
+
 /* Professional Experience */
 .professional_experience {
     width: auto;
@@ -199,14 +238,12 @@ li::first-letter {
     border-radius: 15px;
     margin-top: 50px;
     margin-left: 80px;
-    transition: all 1.5s;
+    transition: all 2.5s;
 }
 
 .professional_experience:hover {
-    transform: translateY(27px);
-    background-image: linear-gradient( rgb(248, 177, 96), rgb(243, 240, 240)) ;
-    font-size: 19px;
-    width: 12.9in;
+    transform: translateY(10px);
+    background-image: linear-gradient(rgb(203, 201, 201), rgb(243, 240, 240));
 }
 
 .professional_experience h6 {
@@ -243,14 +280,14 @@ li::first-letter {
 /* Education */
 .bg {
     background-image: url("./html_finalprojimages/campus-spring.jpg");
-    width: auto; 
-     /* Center education section */
+    width: auto;
+    /* Center education section */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 550px ;
+    height: 550px;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
@@ -263,55 +300,43 @@ li::first-letter {
 } */
 
 .education-card {
-    width: 89%;
+    width: 80%;
     height: 270px;
     background-color: rgba(32, 32, 130, 0.326);
     padding: 30px 40px 50px 40px;
     font-size: 18px;
     border-radius: 15px;
     color: rgb(247, 249, 248);
-    transition: all 1.5s;
+    transition: all 2.5s;
 }
+
 .education-card:hover {
-    transform: translateY(40%);
-    font-size: 19px;
-    width: 88%;
+    transform: translateY(5%);
+    /* font-size: 18.5px; */
+    /* width: 70%; */
     height: auto;
     margin-top: 30px;
-    color: rgb(237, 174, 49);
     font-weight: bolder;
 }
 
 .education-card h3 {
-    margin-left: 0; /* Reset margin for smaller screens */
+    margin-left: 0;
+    /* Reset margin for smaller screens */
     /* margin-top: 10px ; */
-    
+
 }
 
 .education-card li {
-    margin-left: 0; /* Reset margin for smaller screens */
+    margin-left: 0;
+    /* Reset margin for smaller screens */
 }
 
 /* Copy right */
 #copy_right {
     font-size: 11px;
-    text-align: center; /* Center align copy right text */
+    text-align: center;
+    /* Center align copy right text */
 }
-
-/* Scroll to Top Button */
-/* .iconbutton { */
-    /* Fixed position */
-    /* position: fixed; */
-    /* Adjust position from bottom */ 
-    /* bottom: 20px;  */
-    /* Adjust position from right */
-    /* right: 20px;  */
-/* } */
-
-/* Increase size on hover */
-/* .iconbutton:hover {
-    transform: scale(1.1); 
-} */
 
 .iconbutton {
     width: 35px;
@@ -329,8 +354,6 @@ li::first-letter {
 }
 
 .iconbutton:hover {
-    width: 50px;
-    height: 50px;
     transform: rotate(360deg);
     background: rgb(32, 32, 130);
 }
