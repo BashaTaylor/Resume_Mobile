@@ -57,7 +57,7 @@ nav {
 
 /* Ham div */
 .hamnav {
-    background-color: #a5a4a4;
+    background-color: rgb(4, 4, 111);
     color: white;
     font-size: 16px;
     padding: 10px;
@@ -101,22 +101,22 @@ h2 {
     margin: 50px 50px 20px 50px;
 }
 
-/* Objective Section */
-#objective h1 {
+/* Summary Section */
+/* #summary h2 {
     font-size: 45px;
     width: 80%;
     margin: 40px 0 20px 0;
-}
+} */
 
-#objective p {
+#summary p {
     font-size: 18px;
     width: auto;
     margin-left: 30px;
 }
 
-.objective_duo {
+/* .objective_duo {
     margin: 0;
-}
+} */
 
 div {
     width: auto;
@@ -193,7 +193,7 @@ div {
     width: 3.2in;
     font-size: 18px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
-    background-image: linear-gradient(rgba(24, 16, 181, 0.94), rgb(89, 200, 237));
+    background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
     font-weight: normal;
     transition: 2.5s;
 }
@@ -208,7 +208,7 @@ div {
 }
 
 .skills_section button {
-    background-image: linear-gradient(rgba(24, 16, 181, 0.94), rgb(89, 200, 237));
+    background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
     color: white;
     padding: 7px;
     border-radius: 15px;
@@ -243,7 +243,7 @@ li::first-letter {
 
 .professional_experience:hover {
     transform: translateY(10px);
-    background-image: linear-gradient(rgb(203, 201, 201), rgb(243, 240, 240));
+    background-image: linear-gradient(rgb(181, 180, 182), rgb(252, 252, 252));
 }
 
 .professional_experience h6 {
@@ -287,21 +287,21 @@ li::first-letter {
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 550px;
+    height: 550px auto;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
     margin-left: 90px;
 }
 
-/* .education-container {
-    margin: 20px auto;
+.education-container {
+    margin: 15px auto;
     width: 80% auto;
-} */
+}
 
 .education-card {
     width: 80%;
-    height: 270px;
+    height: 180px auto;
     background-color: rgba(32, 32, 130, 0.326);
     padding: 30px 40px 50px 40px;
     font-size: 18px;
@@ -311,12 +311,9 @@ li::first-letter {
 }
 
 .education-card:hover {
-    transform: translateY(5%);
-    /* font-size: 18.5px; */
-    /* width: 70%; */
+    transform: translateY(1.5%);
     height: auto;
     margin-top: 30px;
-    font-weight: bolder;
 }
 
 .education-card h3 {
