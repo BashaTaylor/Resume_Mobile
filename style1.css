@@ -16,7 +16,7 @@ nav {
     padding: 10px 20px;
     /* Adjust padding for smaller screens */
     /* Adjust margin for smaller screens */
-    width: 100%;
+    width: auto;
     height: auto;
     margin-left: auto;
     margin-right: 0;
@@ -35,6 +35,7 @@ nav {
 .profile_name hr {
     margin-right: 20px;
     width: auto;
+
 }
 
 .profile_name img {
@@ -70,6 +71,7 @@ nav {
     padding: 10px;
     margin-left: auto;
     word-wrap: break-word;
+    width: auto;
 }
 
 .hamlabel {
