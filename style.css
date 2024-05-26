@@ -40,12 +40,12 @@ nav {
 .profile_name hr {
     margin-right: 20px;
     width: auto;
-
 }
 
 .profile_name img {
     max-width: 25px;
     max-height: 25px;
+    margin-right: 20px;
 }
 
 #contact_indent {
@@ -55,6 +55,8 @@ nav {
 .contact_info {
     font-size: 14px;
     word-wrap: break-word;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -94,11 +96,12 @@ nav {
     display: none;
     /* Position it below the hamburger */
     /* top: 100%;  */
-    background-color: #5b038e; /* Match the background color of nav */
+    background-color: #5b038e;
+    /* Match the background color of nav */
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding: 7px;
+    padding: 10px;
     margin-top: 10px;
 }
 
@@ -106,7 +109,7 @@ nav {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 7px;
+    padding: 15px;
 }
 
 .hamnav a:hover {
@@ -115,16 +118,16 @@ nav {
 }
 
 /* Show menu items when checkbox is checked: display row */
-#hamburger:checked ~ #hamitems {
+#hamburger:checked~#hamitems {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 /* enlarging the hamburger manu! */
 label[for="hamburger"] {
     /* Replace XX with your desired size */
-    font-size: 1.428572em; 
+    font-size: 1.428572em;
 }
 
 /* Titles */
@@ -142,6 +145,7 @@ hr {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 /* Summary Section */
 
 #summary h2 {
@@ -187,11 +191,11 @@ hr {
     margin-top: 50px;
     /* This worked so well to hide some overlay at the bottom */
     margin-bottom: -3px;
-    
+
 }
 
 .overlay {
-    margin-left: 0;
+    margin-left: 10px;
     /* Reset margin for smaller screens */
     text-align: center;
     /* Center align text */
@@ -242,6 +246,7 @@ li::first-letter {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
+    justify-content:space-evenly;
 }
 
 .qualifications {
@@ -276,6 +281,8 @@ li::first-letter {
     padding-bottom: 35px;
     /* width: 13in; */
     border-radius: 15px;
+    display: block;
+    margin-right: 50px;
     margin-top: 50px;
     margin-left: 80px;
     transition: all 2.5s;
@@ -332,6 +339,7 @@ li::first-letter {
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
+    display: block;
     margin-left: 80px;
     margin-right: 50px;
     transition: all 2.5s;
@@ -339,9 +347,9 @@ li::first-letter {
 
 .bg:hover {
     transform: translateY(2%);
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    height: 100%;
+    /* margin-top: auto;
+    margin-bottom: auto; */
 }
 
 .education-container {
@@ -362,12 +370,12 @@ li::first-letter {
     margin-right: auto;
 }
 
-.education-card:hover {
+/* .education-card:hover {
     transform: translateY(6%);
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
-}
+} */
 
 .education-card h3 {
     margin-left: 0;
