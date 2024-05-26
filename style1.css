@@ -15,20 +15,20 @@ nav {
     background-color: #7600bc;
     padding: 10px 20px;
     /* Adjust padding for smaller screens */
-    margin-bottom: 10px;
     /* Adjust margin for smaller screens */
-    width: auto;
+    width: 100%;
     height: auto;
-    margin-left: -1cm;
-    margin-right: -1cm;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
 }
 
 .profile_name {
-    color: lightgray;
+    color: white;
     font-size: 20px;
     font-style: normal;
     /* Adjust padding for smaller screens */
-    padding: 0 7px 7px 0;
+    padding: 10px;
 }
 
 .profile_name hr {
@@ -40,13 +40,17 @@ nav {
     max-height: 25px;
 }
 
+#contact_indent {
+    margin-left: 25px;
+}
+
 .contact_info {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
 #linkedin {
-    color: lightgray;
+    color: white;
     text-decoration: none;
 }
 
@@ -55,13 +59,19 @@ nav {
     text-decoration: underline;
 }
 
-/* Ham div */
+
+/* Hamburger menu div */
 .hamnav {
-    background-color: rgb(4, 4, 111);
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px;
-    margin-right: 27px;
+    margin-left: auto;
+
+}
+
+.hamlabel {
+    font-size: 1.7em;
+    cursor: pointer;
 }
 
 #hamburger {
@@ -70,12 +80,14 @@ nav {
 }
 
 #hamitems {
-    display: none;
     /* Hide the menu items initially */
-}
-
-.hamnav label {
-    cursor: pointer;
+    display: none;
+    /* Position it below the hamburger */
+    top: 100%; 
+    background-color: #5b038e; /* Match the background color of nav */
+    width: auto;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .hamnav a {
@@ -91,8 +103,14 @@ nav {
 }
 
 /* Show menu items when checkbox is checked */
-#hamburger:checked~#hamitems {
+#hamburger:checked ~ #hamitems {
     display: block;
+}
+
+/* enlarging the hamburger manu! */
+label[for="hamburger"] {
+    /* Replace XX with your desired size */
+    font-size: 1.428572em; 
 }
 
 /* Titles */
@@ -101,30 +119,30 @@ h2 {
     margin: 50px 50px 20px 50px;
 }
 
+p {
+    line-height: 1.25;
+}
+
 /* Summary Section */
-/* #summary h2 {
-    font-size: 45px;
-    width: 80%;
-    margin: 40px 0 20px 0;
-} */
+
+#summary h2 {
+    font-size: 48px;
+    margin-top: 30px;
+    padding-left: 30px;
+}
 
 #summary p {
     font-size: 18px;
-    width: auto;
-    margin-left: 30px;
-}
-
-/* .objective_duo {
-    margin: 0;
-} */
-
-div {
-    width: auto;
+    margin-top: 1.8cm;
+    padding-right: 70px;
+    padding-left: 30px;
     margin-left: 55px;
+    width: auto;
 }
+
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .img_container {
@@ -148,7 +166,10 @@ div {
     /* Reset margin for smaller screens */
     margin-right: 0;
     /* Reset margin for smaller screens */
-    margin-top: 20px;
+    margin-top: 50px;
+    /* This worked so well to hide some overlay */
+    margin-bottom: -3px;
+    
 }
 
 .overlay {
@@ -174,37 +195,9 @@ div {
     opacity: 1;
 }
 
-
-/* Qualifications */
-.all_qualifications {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-}
-
-.qualifications {
-    border: 1px solid gray;
-    color: lightgray;
-    display: block;
-    border-radius: 15px;
-    text-align: unset;
-    margin: 30px 80px 50px 30px;
-    padding: 11px 25px 15px 30px;
-    width: 3.2in;
-    font-size: 18px;
-    box-shadow: 0 10px 15px rgb(102, 102, 102);
-    background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
-    font-weight: normal;
-    transition: 2.5s;
-}
-
-.qualifications:hover {
-    transform: translateY(10px);
-}
-
 /* Skills */
 .skills_section {
-    margin: 30px 30px 50px 80px;
+    margin: 30px 30px 0px 80px;
 }
 
 .skills_section button {
@@ -225,6 +218,35 @@ li::first-letter {
     text-transform: uppercase;
 }
 
+
+/* Qualifications */
+.all_qualifications {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.qualifications {
+    border: 1px solid gray;
+    color: lightgray;
+    display: block;
+    border-radius: 15px;
+    text-align: unset;
+    margin: 30px 80px 50px 80px;
+    padding: 11px 25px 15px 30px;
+    width: 3.2in;
+    font-size: 18px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
+    font-weight: normal;
+    transition: 2.5s;
+}
+
+.qualifications:hover {
+    transform: translateY(2%);
+}
+
+
 /* Professional Experience */
 .professional_experience {
     width: auto;
@@ -242,7 +264,7 @@ li::first-letter {
 }
 
 .professional_experience:hover {
-    transform: translateY(10px);
+    transform: translateY(2%);
     background-image: linear-gradient(rgb(181, 180, 182), rgb(252, 252, 252));
 }
 
@@ -291,7 +313,16 @@ li::first-letter {
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
-    margin-left: 90px;
+    margin-left: 80px;
+    margin-right: 50px;
+    transition: all 2.5s;
+}
+
+.bg:hover {
+    transform: translateY(2%);
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .education-container {
@@ -308,12 +339,15 @@ li::first-letter {
     border-radius: 15px;
     color: rgb(247, 249, 248);
     transition: all 2.5s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .education-card:hover {
-    transform: translateY(1.5%);
+    transform: translateY(6%);
     height: auto;
-    margin-top: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .education-card h3 {
