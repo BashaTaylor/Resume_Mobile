@@ -5,160 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>Barbara Taylor Resume</title>
-    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js"></script>
-
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav id="home">
-
         <div class="profile_name">
             Barbara Taylor
-
             <hr id="profile_name_hr">
-
-            <div class="contact_info">
-                <img src="./html_finalprojimages/home_icon.png" alt="home icon" />
-                Plainville, CT 06062
-            </div>
-            <div class="contact_info">
-                <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"
-                    alt="image of envelope in a circle" />
-                bashataylor.22@gmail.com
-            </div>
-            <div style="clear:both;"></div>
-            <div class="contact_info">
-                <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"
-                    alt="image of phone" />Cell:
-                (959)222-9734
-            </div>
-            <div class="contact_info">
-                <img src="./html_finalprojimages/icons8-linkedin-26.png" alt="linkedin logo" /> <a class="contact_info"
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/barbara-taylor-275a65207/">https://www.linkedin.com/in/barbara-taylor-275a65207/</a>
+            <div id="contact_indent">
+                <div class="contact_info">
+                    <img src="./html_finalprojimages/home_icon.png" alt="home icon" />
+                    Plainville, CT 06062
+                </div>
+                <div class="contact_info">
+                    <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"
+                        alt="image of envelope in a circle" />
+                    bashataylor.22@gmail.com
+                </div>
+                <div style="clear:both;"></div>
+                <div class="contact_info">
+                    <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"
+                        alt="image of phone" />Cell:
+                    (959)222-9734
+                </div>
+                <div class="contact_info">
+                    <img src="./html_finalprojimages/icons8-linkedin-26.png" alt="linkedin logo" /> <a class="contact_info"
+                        id="linkedin"
+                        href="https://www.linkedin.com/in/barbara-taylor-275a65207/">https://www.linkedin.com/in/barbara-taylor-275a65207/</a>
+                </div>
             </div>
         </div>
-
         <div class="hamnav">
-            <label for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger">
+            <!-- <label for="hamburger_size" style="font-size: 20px;">Menu</label> -->
+            <label for="hamburger" class="hamlabel">☰ Menu</label>
             <div id="hamitems">
                 <a class="hamnav" href="#summary">Summary</a>
-
                 <a class="hamnav" href="#my_skills">Skills</a>
                 <a class="hamnav" href="#qualifications">Qualifications</a>
                 <a class="hamnav" href="#professional_experience">Professional Experience</a>
                 <a class="hamnav" href="#education">Education</a>
-                <!-- Add more menu items as needed -->
             </div>
-
         </div>
-
-    </nav><br>
-
+    </nav>
     <!-- Summary-->
     <section id="summary" class="container">
-
-
-        <div class="img_container">
-            
-            <img id="profile_image" src="./html_finalprojimages/profile_pic.JPG" alt="profile picture"
-                style="width:440px">
-
-            <div class="overlay">My Name is Barbara Taylor</div>
-        </div>
-        <h2 style="text-shadow: 2px 5px lightgray;">Summary</h2>
-        <div>
-            <p>Dedicated professional with a strong background in banking operations and technical writing. Proficient
-                in accounts reconciliation, cash management, and process improvement methodologies. Skilled in creating
-                clear and concise technical documentation. Knowledgeable in web development while aiming towards creating responsive websites. Excellent interpersonal and communication skills, adaptable
-                to fast-paced environments, and a collaborative team player.</p>
-        </div>
+            <div class="img_container">
+                <img id="profile_image" src="./html_finalprojimages/profile_pic.JPG" alt="profile picture">
+                <div class="overlay">My Name is Barbara Taylor</div>
+            </div>
+            <h2 style="text-shadow: 2px 5px lightgray;">Summary</h2>
+            <div>
+                <p>Dedicated professional with a strong background in banking operations and technical writing.
+                    Proficient in accounts reconciliation, cash management, and process improvement methodologies.
+                    Skilled in creating
+                    clear and concise technical documentation. Knowledgeable in web development while aiming towards
+                    creating responsive websites. Excellent interpersonal and communication skills, adaptable
+                    to fast-paced environments, and a collaborative team player.</p>
+            </div>
     </section>
-    <hr>
+    <hr id="sumhr" style="margin-top: 60px;">
     <!-- Skills -->
     <section id="my_skills">
         <h2 style="text-shadow: 2px 5px lightgray;">Skills</h2>
         <div style="clear:both;"></div>
-
         <div class="skills_section">
             <button type="button" style="width: 125px;" onclick="showAndSortSkills()">Show list</button>
-
             <button type="button" style="width: 125px;" onclick="clearSkillsList()">Clear list</button>
             <div id="skillsList"></div>
         </div>
-    </section>
-
-    <!-- <div class="objective_duo">
-                <h1 style="text-shadow: 2px 7px lightgray;">
-                    Objective
-                </h1><br>
-                <p>
-                    <span class="skills">Detail-oriented</span>, <span class="skills">problem solver</span>, <span
-                        class="skills">quick learner</span>, and <span class="skills">results-driven</span> professional
-                    with experience
-                    in process documentation, <span class="skills">technical
-                        communication</span>, double-entry bookkeeping, and account
-                        reconciliation.
-                    Seeking a challenging role in technical writing with an organization where I can leverage my
-                    skills and expertise in process mapping and stakeholder engagement to create clear and concise technical documentatio.
-                    Committed to delivering high-quality deliverables that enhance <span class="skills"> operational efficiency</span>.
-                    <br>
-                    Alternatively, while communicating my <span class="skills">versatility</span>, I am seeking a role
-                    in Accounts Payable/Receivable to conduct account reconciliations and double-entry bookkeeping, practicing 3-way match, and processing payments to vendors.
-                </p>
-
-            </div> -->
-
-
     </section><br><br><br>
-    <hr>
-
+    <hr id="skillshr" style="margin">
     <!-- Qualifications -->
     <section id="qualifications">
         <h2 style="text-shadow: 2px 5px lightgray;">Qualifications</h2>
         <div style="clear:both;"></div>
-
         <div class="all_qualifications">
             <div class="qualifications">
-                <!-- <img src="./html_finalprojimages/html5.png" /> -->
                 <p>Experienced Technical Writer with a strong background in process mapping, business process analysis,
                     and capturing current state environments.</p>
             </div>
-
             <div class="qualifications">
-                <!-- <img src="./html_finalprojimages/java.png" /> -->
                 <p>Strong knowledge and experience in account reconciliation, balancing, and General Ledger.
                 </p>
             </div>
             <div class="qualifications">
-                <!-- <img src="./html_finalprojimages/react.png" /> -->
-                <p>Familiarity with Microsoft Office Suite, including Visio, Excel, Outlook, Word, and PowerPoint.</p>
+                <p>Fluent in Microsoft Office Suite, including Visio, Excel, Outlook, Word, and PowerPoint.</p>
             </div>
             <div class="qualifications">
                 <p>Proficient in creating procedure manuals, flow charts, and graphs to effectively communicate
                     technical information.</p>
             </div>
-
             <!-- Add more qualificationss here -->
             <div class="qualifications">
                 <p>Skilled in collaboration, change management, and stakeholder analysis, with an <span
-                        class="skills">ability to work
-                        independently</span> and prioritize tasks.</li>
+                        class="skills">ability to work independently</span> and prioritize tasks.</li>
             </div>
-
             <div class="qualifications">
-                <!-- <img src="./html_finalprojimages/java.png" /> -->
                 <p>Contributed to process improvement initiatives while utilizing Six Sigma Yellow Belt Certification.
                 </p>
             </div>
-
             <div class="qualifications">
-                <!-- <img src="./html_finalprojimages/java.png" /> -->
-                <p>Knowledgeable in web development languages such as HTML, CSS, JavaScript, Python, Django, SQL, and
-                    WorldPress, Figma and Thunkable interfaces.
+                <p>Knowledgeable in web development languages including HTML, CSS, JavaScript, Python, Django, SQL, and WorldPress, Figma and Thunkable interfaces.
                 </p>
                 <p hidden><span class="skills">Creativity</span>.</p>
                 <p hidden><span class="skills">Collaboration</span>.</p>
@@ -168,7 +119,7 @@
                 <p hidden><span class="skills">Attention to detail</span>.</p>
                 <p hidden><span class="skills">Business acumen</span>.</p>
                 <p hidden><span class="skills">Resiliency</span>.</p>
-                <p hidden><span class="skills">Computer programming skills</span>.</p>
+                <p hidden><span class="skills">Computer programming skills (including developing this website)</span>.</p>
                 <p hidden><span class="skills">Empathy</span>.</p>
                 <p hidden><span class="skills">Computer literate</span>.</p>
                 <p hidden><span class="skills">Emotional intelligence</span>.</p>
@@ -177,17 +128,12 @@
                 <p hidden><span class="skills">Prioritization</span>.</p>
                 <p hidden><span class="skills">Financial management skills</span>.</p>
             </div>
-
         </div>
-
     </section><br>
     <hr>
-
-
     <!-- Professional Experience -->
     <section id="professional_experience">
         <h2 style="text-shadow: 2px 5px lightgray;">Professional Experience</h2>
-
         <div style="clear:both;"></div>
         <div class="professional_experience"><br><br>
             <h6>Technical Writer</h6>
@@ -210,7 +156,6 @@
                     with regulatory requirements.</li>
             </ul>
         </div><br><br>
-
         <div class="professional_experience"><br><br>
             <h6>Electronic Funds Transfer (EFT) Conversion Specialist</h6>
             <h6 class="professional_experience_text">Liberty Bank, Middletown, CT
@@ -268,7 +213,6 @@
                 <li>Finalized processing documents such as title policies, unrecorded mortgages, recorded mortgages, and
                     other required documentation.</li>
             </ul>
-
         </div><br><br>
         <div class="professional_experience"><br><br>
             <h6>Senior teller, Teller II, Teller I</h6>
@@ -293,13 +237,11 @@
         </div><br><br>
     </section><br><br><br>
     <hr>
-
     <!-- Education -->
     <section class="education" id="education">
         <h2 style="text-shadow: 2px 5px lightgray;">Education
         </h2>
         <div style="clear:both;"></div>
-        <!-- <div id="ed_background"> -->
         <br>
         <div class="bg">
             <div id="education-container" class="education-container">
@@ -319,10 +261,8 @@
             </div>
         </div>
     </section>
-
     <div style="clear:both;"></div><br><br><br>
     <hr>
-
     <div>
         <p id="copy_right">&copy; 2024 Created by Barbara Taylor</p>
     </div>
@@ -332,11 +272,10 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
                 width="63px">
                 <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
         </a>
     </div>
     </div>
 </body>
-
 </html>
