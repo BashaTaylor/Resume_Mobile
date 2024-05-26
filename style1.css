@@ -118,6 +118,7 @@ nav {
 #hamburger:checked ~ #hamitems {
     display: inline-flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* enlarging the hamburger manu! */
