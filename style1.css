@@ -16,12 +16,17 @@ nav {
     padding: 10px 20px;
     /* Adjust padding for smaller screens */
     /* Adjust margin for smaller screens */
-    width: auto;
+    /* width: auto; */
+    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: 0;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
 
 .profile_name {
     color: white;
@@ -69,7 +74,7 @@ nav {
     color: white;
     font-size: 14px;
     padding: 10px;
-    margin-left: auto;
+    margin-left: 0;
     word-wrap: break-word;
     width: auto;
 }
@@ -88,10 +93,12 @@ nav {
     /* Hide the menu items initially */
     display: none;
     /* Position it below the hamburger */
-    top: 100%; 
+    /* top: 100%;  */
     background-color: #5b038e; /* Match the background color of nav */
-    width: auto;
-    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 7px;
     margin-top: 10px;
 }
 
@@ -99,7 +106,7 @@ nav {
     color: white;
     text-decoration: none;
     display: block;
-    padding: 10px;
+    padding: 7px;
 }
 
 .hamnav a:hover {
@@ -107,9 +114,10 @@ nav {
     text-decoration: underline;
 }
 
-/* Show menu items when checkbox is checked */
+/* Show menu items when checkbox is checked: display row */
 #hamburger:checked ~ #hamitems {
-    display: block;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 /* enlarging the hamburger manu! */
@@ -122,12 +130,17 @@ label[for="hamburger"] {
 h2 {
     font-size: 35px;
     margin: 50px 50px 20px 50px;
+    text-shadow: 2px 5px lightgray;
 }
 
 p {
     line-height: 1.25;
 }
 
+hr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 /* Summary Section */
 
 #summary h2 {
@@ -162,16 +175,16 @@ p {
 #profile_image {
     width: 100%;
     /* Ensure image covers full width of container */
-    max-width: 100%;
+    max-width: 95%;
     /* Ensure image scales properly */
     height: auto;
     /* Maintain aspect ratio */
-    margin-left: 0;
+    margin-left: 10px;
     /* Reset margin for smaller screens */
-    margin-right: 0;
+    margin-right: 10px;
     /* Reset margin for smaller screens */
     margin-top: 50px;
-    /* This worked so well to hide some overlay */
+    /* This worked so well to hide some overlay at the bottom */
     margin-bottom: -3px;
     
 }
@@ -304,6 +317,7 @@ li::first-letter {
 }
 
 /* Education */
+
 .bg {
     background-image: url("./html_finalprojimages/campus-spring.jpg");
     width: auto;
@@ -313,7 +327,7 @@ li::first-letter {
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 550px auto;
+    height: 550px;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     /* margin-top: 40px; */
@@ -331,12 +345,12 @@ li::first-letter {
 
 .education-container {
     margin: 15px auto;
-    width: 80% auto;
+    width: 80%;
 }
 
 .education-card {
     width: 80%;
-    height: 180px auto;
+    height: 180px;
     background-color: rgba(32, 32, 130, 0.326);
     padding: 30px 40px 50px 40px;
     font-size: 18px;
