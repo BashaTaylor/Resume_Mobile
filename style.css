@@ -331,14 +331,13 @@ li::first-letter {
     width: auto;
     /* Center education section */
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     border-radius: 15px;
     color: rgb(9, 9, 9);
-    height: 550px;
+    height: 100%;
     padding-bottom: 5px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
-    /* margin-top: 40px; */
     display: block;
     margin-left: 80px;
     margin-right: 50px;
@@ -348,39 +347,30 @@ li::first-letter {
 .bg:hover {
     transform: translateY(2%);
     height: 100%;
-    /* margin-top: auto;
-    margin-bottom: auto; */
-}
-
-.education-container {
-    margin: 15px auto;
-    width: 80%;
 }
 
 .education-card {
     width: 80%;
-    height: 180px;
-    background-color: rgba(32, 32, 130, 0.326);
+    height: 70%;
     padding: 30px 40px 50px 40px;
     font-size: 18px;
     border-radius: 15px;
-    color: rgb(247, 249, 248);
+    color: white;
     transition: all 2.5s;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* .education-card:hover {
-    transform: translateY(6%);
+.education-card:hover {
+    transform: translateY(5%);
+    background-color: rgba(0, 0, 128, 0.706);
     height: auto;
     margin-top: auto;
     margin-bottom: auto;
-} */
+}
 
 .education-card h3 {
     margin-left: 0;
-    /* Reset margin for smaller screens */
-    /* margin-top: 10px ; */
 
 }
 
