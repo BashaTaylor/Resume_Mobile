@@ -160,8 +160,8 @@ hr {
     padding-left: 30px;
     margin-left: 55px;
     width: auto;
+    margin-bottom: 50px;
 }
-
 
 * {
     box-sizing: border-box;
@@ -228,6 +228,7 @@ hr {
     padding: 7px;
     border-radius: 15px;
     box-shadow: 0 10px 15px rgb(102, 102, 102);
+    width: 125px;
 }
 
 #skillsList {
