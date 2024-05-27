@@ -263,7 +263,7 @@ li::first-letter {
     box-shadow: 0 10px 15px rgb(102, 102, 102);
     background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
     font-weight: normal;
-    transition: 2.5s;
+    transition: 2s;
 }
 
 .qualifications:hover {
@@ -286,7 +286,7 @@ li::first-letter {
     margin-right: 50px;
     margin-top: 50px;
     margin-left: 80px;
-    transition: all 2.5s;
+    transition: all 2s;
 }
 
 .professional_experience:hover {
@@ -342,7 +342,7 @@ li::first-letter {
     display: block;
     margin-left: 80px;
     margin-right: 50px;
-    transition: all 2.5s;
+    transition: all 2s;
 }
 
 .bg:hover {
