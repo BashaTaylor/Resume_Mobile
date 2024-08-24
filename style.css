@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Body */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -424,3 +425,431 @@ li::first-letter {
     transform: rotate(360deg);
     background: rgb(32, 32, 130);
 }
+=======
+/* Body */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    min-height: 100vh;
+    /* Ensure body covers the full viewport height */
+    width: auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #7600bc;
+    padding: 10px 20px;
+    /* Adjust padding for smaller screens */
+    /* Adjust margin for smaller screens */
+    /* width: auto; */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+.profile_name {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    /* Adjust padding for smaller screens */
+    padding: 10px;
+
+}
+
+.profile_name hr {
+    margin-right: 20px;
+    width: auto;
+}
+
+.profile_name img {
+    max-width: 25px;
+    max-height: 25px;
+    margin-right: 20px;
+}
+
+#contact_indent {
+    margin-left: 25px;
+}
+
+.contact_info {
+    font-size: 14px;
+    word-wrap: break-word;
+    display: flex;
+    align-items: center;
+}
+
+
+#linkedin {
+    color: white;
+    text-decoration: none;
+}
+
+#linkedin:hover {
+    color: rgb(4, 4, 111);
+    text-decoration: underline;
+}
+
+
+/* Hamburger menu div */
+.hamnav {
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    margin-left: 0;
+    word-wrap: break-word;
+    width: auto;
+}
+
+.hamlabel {
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+#hamburger {
+    display: none;
+    /* Hide the checkbox */
+}
+
+#hamitems {
+    /* Hide the menu items initially */
+    display: none;
+    /* Position it below the hamburger */
+    /* top: 100%;  */
+    background-color: #5b038e;
+    /* Match the background color of nav */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hamnav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+}
+
+.hamnav a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* Show menu items when checkbox is checked: display row */
+#hamburger:checked~#hamitems {
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* enlarging the hamburger manu! */
+label[for="hamburger"] {
+    /* Replace XX with your desired size */
+    font-size: 1.428572em;
+}
+
+/* Titles */
+h2 {
+    font-size: 35px;
+    margin: 50px 50px 20px 50px;
+    text-shadow: 2px 5px lightgray;
+}
+
+p {
+    line-height: 1.25;
+}
+
+hr {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Summary Section */
+
+#summary h2 {
+    font-size: 48px;
+    margin-top: 30px;
+}
+
+#summary p {
+    font-size: 18px;
+    margin-top: 1.8cm;
+    padding-right: 70px;
+    padding-left: 30px;
+    margin-left: 55px;
+    width: auto;
+    margin-bottom: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.img_container {
+    width: 100%;
+    /* Ensure image container covers full width */
+    max-width: 400px;
+    /* Limit max-width for larger screens */
+    margin: auto;
+    /* Center align image container */
+    position: relative;
+}
+
+#profile_image {
+    width: 100%;
+    /* Ensure image covers full width of container */
+    max-width: 95%;
+    /* Ensure image scales properly */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: 10px;
+    /* Reset margin for smaller screens */
+    margin-right: 10px;
+    /* Reset margin for smaller screens */
+    margin-top: 50px;
+    /* This worked so well to hide some overlay at the bottom */
+    margin-bottom: -3px;
+
+}
+
+.overlay {
+    margin-left: 10px;
+    /* Reset margin for smaller screens */
+    text-align: center;
+    /* Center align text */
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 90%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    position: absolute;
+}
+
+.img_container:hover .overlay {
+    opacity: 1;
+}
+
+/* Achievements */
+.achievements {
+    width: auto;
+    /* box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-color: rgb(243, 240, 240); */
+    font-weight: normal;
+    font-size: 18px;
+    padding: 30px;
+    padding-bottom: 35px;
+    /* width: 13in; */
+    /* border-radius: 15px; */
+    display: block;
+    margin-right: 50px;
+    /* margin-top: 50px; */
+    margin-left: 80px;
+}
+
+/* Skills */
+.skills_section {
+    margin: 30px 30px 0px 80px;
+}
+
+.skills_section button {
+    background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
+    color: white;
+    padding: 7px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    width: 125px;
+}
+
+#skillsList {
+    color: rgb(29, 29, 30);
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+li::first-letter {
+    text-transform: uppercase;
+}
+
+
+/* Qualifications */
+.all_qualifications {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content:space-evenly;
+}
+
+.qualifications {
+    border: 1px solid gray;
+    color: lightgray;
+    display: block;
+    border-radius: 15px;
+    text-align: unset;
+    margin: 30px 80px 50px 80px;
+    padding: 11px 25px 15px 30px;
+    width: 3.2in;
+    font-size: 18px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-image: linear-gradient(rgb(4, 4, 111), rgb(30, 145, 183));
+    font-weight: normal;
+    transition: 2s;
+}
+
+.qualifications:hover {
+    transform: translateY(2%);
+}
+
+
+/* Professional Experience */
+.professional_experience {
+    width: auto;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    background-color: rgb(243, 240, 240);
+    font-weight: normal;
+    font-size: 18px;
+    padding: 30px;
+    padding-bottom: 35px;
+    /* width: 13in; */
+    border-radius: 15px;
+    display: block;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-left: 80px;
+    transition: all 2s;
+}
+
+.professional_experience:hover {
+    transform: translateY(2%);
+    background-image: linear-gradient(rgb(181, 180, 182), rgb(252, 252, 252));
+}
+
+.professional_experience h6 {
+    align-items: center;
+    font-size: 20px;
+    margin-block-start: 8px;
+    margin-block-end: 5px;
+    font-weight: bold;
+
+}
+
+.professional_experience p {
+    align-items: center;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+.professional_experience_text {
+    align-items: center;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Education */
+
+.bg {
+    background-image: url("./html_finalprojimages/campus-spring.jpg");
+    width: auto;
+    /* Center education section */
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: rgb(9, 9, 9);
+    height: 100%;
+    padding-bottom: 5px;
+    box-shadow: 0 10px 15px rgb(102, 102, 102);
+    display: block;
+    margin-left: 80px;
+    margin-right: 50px;
+    transition: all 2s;
+}
+
+.bg:hover {
+    transform: translateY(2%);
+    height: 100%;
+}
+
+.education-card {
+    width: 80%;
+    height: 70%;
+    padding: 30px 40px 50px 40px;
+    font-size: 18px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgba(0, 0, 128, 0.367);
+    transition: all 2.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.education-card:hover {
+    transform: translateY(5%);
+    background-color: rgba(0, 0, 128, 0.719);
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.education-card h3 {
+    margin-left: 0;
+
+}
+
+.education-card li {
+    margin-left: 0;
+    /* Reset margin for smaller screens */
+}
+
+/* Copy right */
+#copy_right {
+    font-size: 11px;
+    text-align: center;
+    /* Center align copy right text */
+}
+
+.iconbutton {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+    transition: width 1.2s, height 1.2s, transform 1.2s;
+}
+
+.iconbutton:hover {
+    transform: rotate(360deg);
+    background: rgb(32, 32, 130);
+}
+>>>>>>> dcc1ebcc98ce7fdcb2ba38135408e8ab995bc879
