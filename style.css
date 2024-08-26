@@ -21,7 +21,7 @@ nav {
     height: auto;
     margin-left: auto;
     margin-right: 0;
-    display: flex;
+    display:inline-flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
@@ -80,8 +80,8 @@ nav {
     width: auto;
 }
 
-.hamlabel {
-    font-size: 1.7em;
+#hamlabel {
+    font-size: 1em;
     cursor: pointer;
 }
 
@@ -92,7 +92,11 @@ nav {
 
 #hamitems {
     /* Hide the menu items initially */
-    display: none;
+    /* display: none; */
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
     /* Position it below the hamburger */
     /* top: 100%;  */
     background-color: #5b038e;
@@ -118,9 +122,9 @@ nav {
 
 /* Show menu items when checkbox is checked: display row */
 #hamburger:checked~#hamitems {
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: none;
+    /* justify-content: space-around;
+    flex-wrap: wrap; */
 }
 
 /* enlarging the hamburger manu! */
