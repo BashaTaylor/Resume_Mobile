@@ -115,18 +115,19 @@ nav {
     text-decoration: underline;
 }
 
-/* Show menu items when checkbox is checked: display row */
+/* Remove this block since the menu will always be open */
 /* #hamburger:checked~#hamitems {
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap;
 } */
 
-/* enlarging the hamburger manu! */
+/* Enlarging the hamburger menu */
 label[for="hamburger"] {
     /* Replace XX with your desired size */
     font-size: 1.428572em;
 }
+
 
 /* Titles */
 h2 {
