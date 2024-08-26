@@ -117,11 +117,11 @@ nav {
 }
 
 /* Show menu items when checkbox is checked: display row */
-#hamburger:checked~#hamitems {
+/* #hamburger:checked~#hamitems {
     display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
+} */
 
 /* enlarging the hamburger manu! */
 label[for="hamburger"] {
