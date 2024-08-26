@@ -90,13 +90,12 @@ nav {
     /* Hide the checkbox */
 }
 
+/* Display the menu items by default */
 #hamitems {
-    /* Hide the menu items initially */
-    display: none;
-    /* Position it below the hamburger */
-    /* top: 100%;  */
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #5b038e;
-    /* Match the background color of nav */
     width: 100%;
     max-width: 100%;
     height: auto;
